@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  --font-geist-sans: "Geist", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
