@@ -8,6 +8,9 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "ca-pub-2450454532725176",
+  },
   title: "Calculadora de IMC — Índice de Masa Corporal",
   description:
     "Calcula tu Índice de Masa Corporal (IMC) gratis. Ingresa tu peso y altura y descubre si estás en tu peso ideal. Con tabla de categorías y recomendaciones.",
@@ -26,6 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${geist.variable} h-full antialiased`}>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2450454532725176"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
         {children}
       </body>
